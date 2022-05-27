@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
 	private void CrossFinishLine()
 	{
 		_isLevelComplete = true;
+
+		Debug.Log("Level Is Complete");
 	}
 
 	private void OnDestroy()

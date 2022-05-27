@@ -9932,7 +9932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _runSpeed: 5
-  _horizontalSpeed: 5
+  _horizontalSpeed: 3
   _leftBorder: -1.5
   _rightBorder: 1.5
   _animator: {fileID: 1169509049}
