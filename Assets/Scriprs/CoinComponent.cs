@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CoinComponent : MonoBehaviour
 {
-
+	[SerializeField] private int _coinValue;
 	[SerializeField] private ParticleSystem _particles;
 	[SerializeField] private float _particlesTime;
 	[SerializeField] private Renderer _renderer;
@@ -21,6 +21,7 @@ public class CoinComponent : MonoBehaviour
 		PlayerComponent player = other.gameObject.GetComponent<PlayerComponent>();
 		if(player!=null)
 		{
+			player.CollectCoin(_coinValue);
 			StartCoroutine(DestroyCoin());
 		}
 	}

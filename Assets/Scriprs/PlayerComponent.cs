@@ -18,6 +18,8 @@ public class PlayerComponent : MonoBehaviour
 	private float _targetX;
 	private static readonly int IsRunning = Animator.StringToHash("IsRunning");
 
+	public Action<int> OnCollectCoin;
+
 	private float TargetX
 	{
 		get => _targetX;
@@ -84,6 +86,11 @@ public class PlayerComponent : MonoBehaviour
 		_isRunning = false;
 		_rigidBody.velocity = Vector3.zero;
 		_animator.SetBool(IsRunning, _isRunning);
+	}
+
+	public void CollectCoin(int value)
+	{
+		OnCollectCoin?.Invoke(value);
 	}
 
 	private void OnDrawGizmos()
