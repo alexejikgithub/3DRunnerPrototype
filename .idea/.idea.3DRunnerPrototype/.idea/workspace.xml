@@ -20,24 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1de547-bc5b-425c-9420-4a36f3ecf74d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Ch46_nonPBR@Slow Run.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Ch46_nonPBR@Slow Run.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Glossiness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Glossiness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbm/Ch46_1001_Specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Idle(1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Materials/Ch46_1001_Diffuse.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maximo/Materials/Ch46_1001_Diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/MainChar/MainCharAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/MainChar/MainCharAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/PlayerMovementScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriprs/PlayerMovementScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +91,7 @@
       <workItem from="1653598349099" duration="1780000" />
       <workItem from="1653600156797" duration="1707000" />
       <workItem from="1653602304072" duration="1812000" />
-      <workItem from="1653604147249" duration="336000" />
+      <workItem from="1653604147249" duration="1560000" />
     </task>
     <servers />
   </component>
