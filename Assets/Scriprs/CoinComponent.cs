@@ -7,6 +7,8 @@ public class CoinComponent : MonoBehaviour
 	[SerializeField] private ParticleSystem _particles;
 	[SerializeField] private float _particlesTime;
 	[SerializeField] private Renderer _renderer;
+
+
 	private IEnumerator DestroyCoin()
 	{
 		_particles.gameObject.SetActive(true);

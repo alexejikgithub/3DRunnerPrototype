@@ -11,4 +11,10 @@ public class RotationUtil : MonoBehaviour
     {
         transform.Rotate(0, 0, _rotatoionSpeed * Time.deltaTime); //rotates 50 degrees per second around z axis
     }
+
+
+    public void SetRandomRotation()
+    {
+        transform.eulerAngles= new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, Random.Range(0,365));
+    }
 }

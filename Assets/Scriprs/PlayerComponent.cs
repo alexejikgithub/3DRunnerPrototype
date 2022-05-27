@@ -19,6 +19,7 @@ public class PlayerComponent : MonoBehaviour
 	private static readonly int IsRunning = Animator.StringToHash("IsRunning");
 
 	public Action<int> OnCollectCoin;
+	
 
 	private float TargetX
 	{
@@ -53,8 +54,12 @@ public class PlayerComponent : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		transform.position = Vector3.MoveTowards(transform.position,
+		if(_isRunning)
+		{
+			transform.position = Vector3.MoveTowards(transform.position,
 			new Vector3(TargetX, transform.position.y, transform.position.z), _horizontalSpeed * Time.deltaTime);
+		}
+		
 	}
 
 
@@ -92,12 +97,13 @@ public class PlayerComponent : MonoBehaviour
 	{
 		OnCollectCoin?.Invoke(value);
 	}
+	
 
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.red;
-		Gizmos.DrawRay(new Vector3(_leftBorder, 0, 0), Vector3.forward * 10);
-		Gizmos.DrawRay(new Vector3(_rightBorder, 0, 0), Vector3.forward * 10);
+		Gizmos.DrawRay(new Vector3(_leftBorder, 0.5f, 0), Vector3.forward * 10);
+		Gizmos.DrawRay(new Vector3(_rightBorder, 0.5f, 0), Vector3.forward * 10);
 	}
 
 	private void OnDestroy()
