@@ -6,6 +6,7 @@ public class PlayerComponent : MonoBehaviour
 {
 	[SerializeField] private float _runSpeed;
 	[SerializeField] private float _horizontalSpeed;
+	[SerializeField] private float _inputScale;
 	[SerializeField] private float _leftBorder;
 	[SerializeField] private float _rightBorder;
 
@@ -27,20 +28,7 @@ public class PlayerComponent : MonoBehaviour
 		get => _targetX;
 		set
 		{
-			if (value >= _rightBorder)
-			{
-				_targetX = _rightBorder;
-			}
-			else if (value <= _leftBorder)
-			{
-				_targetX = _leftBorder;
-			}
-			else
-			{
-				{
-					_targetX = value;
-				}
-			}
+			_targetX= Mathf.Clamp(value, _leftBorder, _rightBorder);
 		}
 	}
 
@@ -60,7 +48,6 @@ public class PlayerComponent : MonoBehaviour
 			transform.position = Vector3.MoveTowards(transform.position,
 			new Vector3(TargetX, transform.position.y, transform.position.z), _horizontalSpeed * Time.deltaTime);
 		}
-
 	}
 
 
@@ -72,7 +59,7 @@ public class PlayerComponent : MonoBehaviour
 
 	private void Drag(Vector3 position)
 	{
-		TargetX = transform.position.x + (position.x - _previousDragX);
+		TargetX = transform.position.x + (position.x - _previousDragX)* _inputScale;
 		_previousDragX = position.x;
 	}
 
