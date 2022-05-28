@@ -55,11 +55,12 @@ public class PlayerComponent : MonoBehaviour
 	{
 		StartRunning();
 		_previousDragX = position.x;
+		
 	}
 
 	private void Drag(Vector3 position)
 	{
-		TargetX = transform.position.x + (position.x - _previousDragX)* _inputScale;
+		TargetX = _previousDragX + (position.x - _previousDragX)* _inputScale;
 		_previousDragX = position.x;
 	}
 
