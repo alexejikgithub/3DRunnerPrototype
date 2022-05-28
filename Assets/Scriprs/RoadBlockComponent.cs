@@ -1,34 +1,54 @@
-
+using System.Collections.Generic;
 using UnityEngine;
 
 
 public enum RoadBlockType
 {
-	Finish,
+	
 	Empty,
-	WithCoins1,
-	WithCoins2
+	WithCoinsCenter,
+	WithCoinsRight,
+	WithCoinsLeft,
+	Finish
 }
 public class RoadBlockComponent : MonoBehaviour, IPoolObject
 {
 	[SerializeField] private float _length;
 	[SerializeField] private RoadBlockType _type;
+	[SerializeField] private ObjectPoolController _coinPool;
+	[SerializeField] private List<SpawnPosition> _positions;
 	public float Length => _length;
 	public RoadBlockType Type => _type;
 
 
-	private ObjectPoolController _pool;
+	private ObjectPoolController _roadPool;
+	
 
-	public void SetPool(ObjectPoolController pool)
+
+
+	public void SetRoadPool(ObjectPoolController pool)
 	{
-		_pool = pool;
+		_roadPool = pool;
+	}
+
+	public void SetCoins(ObjectPoolController pool)
+	{
+		_coinPool = pool;
+		CoinComponent coin;
+		foreach (SpawnPosition position in _positions)
+		{
+			coin = _coinPool.GetPooledGameObject().GetComponent<CoinComponent>();
+			coin.SetRoadPool(_coinPool);
+			coin.transform.position = position.transform.position;
+			coin.gameObject.SetActive(true);
+		}
 	}
 
 	public void RemoveObject()
 	{
 		StopAllCoroutines();
-		if (_pool != null)
-			_pool.ReturnPooledGameObject(gameObject);
+		if (_roadPool != null)
+			_roadPool.ReturnPooledGameObject(gameObject);
 		else
 			Destroy(gameObject);
 	}

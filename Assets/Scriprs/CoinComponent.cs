@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class CoinComponent : MonoBehaviour
+public class CoinComponent : MonoBehaviour,IPoolObject
 {
 	[SerializeField] private int _coinValue;
 	[SerializeField] private ParticleSystem _particles;
@@ -15,13 +15,37 @@ public class CoinComponent : MonoBehaviour
 		_particles.gameObject.SetActive(false);
 	}
 
+	private ObjectPoolController _pool;
+
 	public IEnumerator DestroyCoin()
 	{
 		_particles.gameObject.SetActive(true);
 		_renderer.enabled = false;
 		yield return new WaitForSeconds(_particlesTime);
-		Destroy(gameObject);
+		RemoveObject();
 	}
 
-	
+	public void SetRoadPool(ObjectPoolController pool)
+	{
+		_pool = pool;
+	}
+
+	public void RemoveObject()
+	{
+		StopAllCoroutines();
+		if (_pool != null)
+			_pool.ReturnPooledGameObject(gameObject);
+		else
+			Destroy(gameObject);
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.tag == "BackCollider")
+		{
+			RemoveObject();
+		}
+	}
+
+
 }
