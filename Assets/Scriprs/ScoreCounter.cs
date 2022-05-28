@@ -11,7 +11,7 @@ public class ScoreCounter : MonoBehaviour
 	public void AddScore(int value)
 	{
 		_score += value;
-		_scoreText.text = "Score: " + _score.ToString();
+		_scoreText.text = _score.ToString();
 		
 	}
 }
