@@ -6,48 +6,57 @@ using UnityEngine;
 public class RoadController : MonoBehaviour
 {
 
-    [SerializeField] private RoadBlockComponent _frontBlock;
-    [SerializeField] private List<RoadTypePool> _pools;
-    [SerializeField] private int _numberOfInitialBlocks;
-    [SerializeField] private RoadBlockType[] _roadSequance;
-    
+	[SerializeField] private RoadBlockComponent _frontBlock;
+	[SerializeField] private List<RoadTypePool> _pools;
+	[SerializeField] private RoadBlockType[] _roadSequance;
 
-    private RoadBlockComponent _currentBlock;
-    private ObjectPoolController _currentPool;
 
-    private int _blockIndex;
-    private void Awake()
-    {
-        _frontBlock.SetPool(GetPoolByType(_frontBlock.Type));
+	private RoadBlockComponent _currentBlock;
+	private ObjectPoolController _currentPool;
 
-        for (int i = 0; i < _numberOfInitialBlocks; i++)
-        {
-            SpawnNewBlock();
-            _blockIndex++;
-        }
-    }
-
-    [ContextMenu("tryspawn")]
-    private void SpawnNewBlock()
+	private int _blockIndex;
+	private void Awake()
 	{
-        _currentPool = GetPoolByType(_roadSequance[_blockIndex]);
-        _currentBlock = _currentPool.GetPooledGameObject().GetComponent<RoadBlockComponent>();
-        _currentBlock.transform.position = _frontBlock.transform.position + new Vector3(0, 0, _currentBlock.Length);
-        _frontBlock = _currentBlock;
+		_frontBlock.SetPool(GetPoolByType(_frontBlock.Type));
+		float cameraFarClipping = Camera.main.farClipPlane;
+		float length = 0f;
 
-    }
-
-    private ObjectPoolController GetPoolByType(RoadBlockType type)
-	{
-        foreach(RoadTypePool pool in _pools)
+		while (cameraFarClipping > length)
 		{
-            if(pool.Type == type)
-			{
-                return pool.Pool;
+			if (_blockIndex >= _roadSequance.Length) break;
 
-            }
+			SpawnNewBlock();
+			length += _currentBlock.Length;
+
+
 		}
-        return null;
 	}
- 
+
+
+	public void SpawnNewBlock()
+	{
+		if (_blockIndex >= _roadSequance.Length) return;
+
+		_currentPool = GetPoolByType(_roadSequance[_blockIndex]);
+		_currentBlock = _currentPool.GetPooledGameObject().GetComponent<RoadBlockComponent>();
+		_currentBlock.transform.position = _frontBlock.transform.position + new Vector3(0, 0, _currentBlock.Length);
+		_frontBlock = _currentBlock;
+		_blockIndex++;
+
+
+	}
+
+	private ObjectPoolController GetPoolByType(RoadBlockType type)
+	{
+		foreach (RoadTypePool pool in _pools)
+		{
+			if (pool.Type == type)
+			{
+				return pool.Pool;
+
+			}
+		}
+		return null;
+	}
+
 }
