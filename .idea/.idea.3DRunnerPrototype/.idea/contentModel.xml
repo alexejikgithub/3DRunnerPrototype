@@ -5,13 +5,41 @@
       <e p="3DRunnerPrototype.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="_ExternalAssets" t="Include">
+          <e p="Customizable Skybox" t="Include">
+            <e p="Stylized Sky" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Stylized Sky.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DavePixel" t="Include">
+            <e p="ReadMe!.rtf.txt" t="Include" />
+          </e>
+          <e p="Five Seamless Tileable Ground Textures" t="Include">
+            <e p="read me.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scriprs" t="Include">
           <e p="CameraFollowComponent.cs" t="Include" />
+          <e p="CoinComponent.cs" t="Include" />
+          <e p="DisableOnDistanceUtil.cs" t="Include" />
+          <e p="FinishLineComponent.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="GameplayInput.cs" t="Include" />
             <e p="InteractableCanvasObject.cs" t="Include" />
           </e>
-          <e p="PlayerMovementScript.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
+          <e p="PlayerComponent.cs" t="Include" />
+          <e p="Pool" t="Include">
+            <e p="IPoolObject.cs" t="Include" />
+            <e p="ObjectPoolController.cs" t="Include" />
+          </e>
+          <e p="RoadBlockComponent.cs" t="Include" />
+          <e p="RoadController.cs" t="Include" />
+          <e p="RoadPool.cs" t="Include" />
+          <e p="Rotator.cs" t="Include" />
+          <e p="ScoreCounter.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

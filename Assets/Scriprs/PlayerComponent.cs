@@ -101,8 +101,8 @@ public class PlayerComponent : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.red;
-		Gizmos.DrawRay(new Vector3(_leftBorder, 0.5f, 0), Vector3.forward * 10);
-		Gizmos.DrawRay(new Vector3(_rightBorder, 0.5f, 0), Vector3.forward * 10);
+		Gizmos.DrawRay(new Vector3(_leftBorder, 0.5f, -1), Vector3.forward * 10);
+		Gizmos.DrawRay(new Vector3(_rightBorder, 0.5f, -1), Vector3.forward * 10);
 	}
 
 	private void OnTriggerEnter(Collider other)
