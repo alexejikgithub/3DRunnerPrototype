@@ -12,10 +12,11 @@ public class PlayerComponent : MonoBehaviour
 	[SerializeField] private Animator _animator;
 	[SerializeField] private InteractableCanvasObject _input;
 
-	private bool _isRunning;
 	private Rigidbody _rigidBody;
 
+	private bool _isRunning;
 	private float _targetX;
+	private float _previousDragX;
 	private static readonly int IsRunning = Animator.StringToHash("IsRunning");
 
 	public Action<int> OnCollectCoin;
@@ -47,36 +48,38 @@ public class PlayerComponent : MonoBehaviour
 	{
 		_rigidBody = GetComponent<Rigidbody>();
 
-		_input.OnMouseDragEvent += OnDrag;
-		_input.OnPointerDownEvent += OnPointerDown;
-		_input.OnPointerUpEvent += OnPointerUp;
+		_input.OnPointerDownEvent += BeginInput;
+		_input.OnMouseDragEvent += Drag;
+		_input.OnPointerUpEvent += EndInput;
 	}
 
 	void FixedUpdate()
 	{
-		if(_isRunning)
+		if (_isRunning)
 		{
 			transform.position = Vector3.MoveTowards(transform.position,
 			new Vector3(TargetX, transform.position.y, transform.position.z), _horizontalSpeed * Time.deltaTime);
 		}
-		
+
 	}
 
 
-	private void OnPointerDown(Vector3 position)
+	private void BeginInput(Vector3 position)
 	{
 		StartRunning();
-		TargetX = position.x;
+		_previousDragX = position.x;
 	}
 
-	private void OnDrag(Vector3 position)
+	private void Drag(Vector3 position)
 	{
-		TargetX = position.x;
+		TargetX = transform.position.x + (position.x - _previousDragX);
+		_previousDragX = position.x;
 	}
 
-	private void OnPointerUp(Vector3 position)
+	private void EndInput(Vector3 position)
 	{
 		StopRunning();
+		TargetX = transform.position.x;
 	}
 
 	private void StartRunning()
@@ -97,7 +100,7 @@ public class PlayerComponent : MonoBehaviour
 	{
 		OnCollectCoin?.Invoke(value);
 	}
-	
+
 
 	private void OnDrawGizmos()
 	{
@@ -111,7 +114,7 @@ public class PlayerComponent : MonoBehaviour
 		CoinComponent coin = other.gameObject.GetComponent<CoinComponent>();
 		if (coin != null)
 		{
-			
+
 			CollectCoin(coin.CoinValue);
 			StartCoroutine(coin.DestroyCoin());
 			return;
@@ -127,8 +130,8 @@ public class PlayerComponent : MonoBehaviour
 
 	private void OnDestroy()
 	{
-		_input.OnMouseDragEvent -= OnDrag;
-		_input.OnPointerDownEvent -= OnPointerDown;
-		_input.OnPointerUpEvent -= OnPointerUp;
+		_input.OnMouseDragEvent -= Drag;
+		_input.OnPointerDownEvent -= BeginInput;
+		_input.OnPointerUpEvent -= EndInput;
 	}
 }
