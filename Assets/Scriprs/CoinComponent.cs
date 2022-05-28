@@ -8,8 +8,14 @@ public class CoinComponent : MonoBehaviour
 	[SerializeField] private float _particlesTime;
 	[SerializeField] private Renderer _renderer;
 
+	public int CoinValue => _coinValue;
 
-	private IEnumerator DestroyCoin()
+	private void Awake()
+	{
+		_particles.gameObject.SetActive(false);
+	}
+
+	public IEnumerator DestroyCoin()
 	{
 		_particles.gameObject.SetActive(true);
 		_renderer.enabled = false;
@@ -17,15 +23,5 @@ public class CoinComponent : MonoBehaviour
 		Destroy(gameObject);
 	}
 
-
-	private void OnTriggerEnter(Collider other)
-	{
-		PlayerComponent player = other.gameObject.GetComponent<PlayerComponent>();
-		if(player!=null)
-		{
-			player.CollectCoin(_coinValue);
-			StartCoroutine(DestroyCoin());
-		}
-	}
 	
 }

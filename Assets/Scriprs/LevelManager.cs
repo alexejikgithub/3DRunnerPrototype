@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
 	private void Awake()
 	{
 		_player.OnCollectCoin += CollectCoin;
-		_finishLine.OnFinishLineCrossed += CrossFinishLine;
+		_player.OnFinishLineCrossed += CrossFinishLine;
 	}
 
 	private void CollectCoin(int value)
@@ -31,6 +31,6 @@ public class LevelManager : MonoBehaviour
 	private void OnDestroy()
 	{
 		_player.OnCollectCoin -= CollectCoin;
-		_finishLine.OnFinishLineCrossed -= CrossFinishLine;
+		_player.OnFinishLineCrossed -= CrossFinishLine;
 	}
 }

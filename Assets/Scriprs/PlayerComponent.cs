@@ -19,7 +19,7 @@ public class PlayerComponent : MonoBehaviour
 	private static readonly int IsRunning = Animator.StringToHash("IsRunning");
 
 	public Action<int> OnCollectCoin;
-	
+	public Action OnFinishLineCrossed;
 
 	private float TargetX
 	{
@@ -104,6 +104,25 @@ public class PlayerComponent : MonoBehaviour
 		Gizmos.color = Color.red;
 		Gizmos.DrawRay(new Vector3(_leftBorder, 0.5f, 0), Vector3.forward * 10);
 		Gizmos.DrawRay(new Vector3(_rightBorder, 0.5f, 0), Vector3.forward * 10);
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		CoinComponent coin = other.gameObject.GetComponent<CoinComponent>();
+		if (coin != null)
+		{
+			
+			CollectCoin(coin.CoinValue);
+			StartCoroutine(coin.DestroyCoin());
+			return;
+		}
+
+		FinishLineComponent finish = other.gameObject.GetComponent<FinishLineComponent>();
+		if (finish != null)
+		{
+			OnFinishLineCrossed?.Invoke();
+			return;
+		}
 	}
 
 	private void OnDestroy()
