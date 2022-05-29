@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816137e346a68ad4e91c65e1c6fefab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _frontBlock: {fileID: 1234588718}
+  _frontBlock: {fileID: 1247373938}
   _pools:
   - _pool: {fileID: 1165208504}
     _type: 0
@@ -1236,78 +1236,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318ad51a1a5d7bf41be0a33ff1b37050, type: 3}
---- !u!1 &242720500
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 242720501}
-  - component: {fileID: 242720503}
-  - component: {fileID: 242720502}
-  m_Layer: 0
-  m_Name: FrontDownCollider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &242720501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242720500}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 50}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 543450652214327892}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &242720502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242720500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329b9e25a3ae2ca498d818fdc07161d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnBlockOver:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 219208361}
-        m_TargetAssemblyTypeName: RoadController, Assembly-CSharp
-        m_MethodName: SpawnNewBlock
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!65 &242720503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242720500}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 1.5, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &277783482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8083367471411275312, guid: f4064135853c8b54ab767370b8bea940, type: 3}
@@ -3054,13 +2982,13 @@ MonoBehaviour:
   _objectToPool: {fileID: 4240016124372424320, guid: 318ad51a1a5d7bf41be0a33ff1b37050, type: 3}
 --- !u!114 &1181324467 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1181324467, guid: f4064135853c8b54ab767370b8bea940, type: 3}
+  m_CorrespondingSourceObject: {fileID: 33268741842684265, guid: f4064135853c8b54ab767370b8bea940, type: 3}
   m_PrefabInstance: {fileID: 8083367470364308097}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78b3fe18d59953e4991f21db15ae7893, type: 3}
+  m_Script: {fileID: 11500000, guid: e529b158f3b4a8f49b896f5bbbee9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1181324469 stripped
@@ -3128,15 +3056,15 @@ MonoBehaviour:
   _player: {fileID: 7486504621413657961}
   _scoreCounter: {fileID: 1216735788}
   _finishLine: {fileID: 0}
---- !u!114 &1234588718 stripped
+--- !u!114 &1247373938 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1792171369583894948, guid: 318ad51a1a5d7bf41be0a33ff1b37050, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6611071085794121243, guid: 318ad51a1a5d7bf41be0a33ff1b37050, type: 3}
   m_PrefabInstance: {fileID: 4240016123425440428}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78b3fe18d59953e4991f21db15ae7893, type: 3}
+  m_Script: {fileID: 11500000, guid: e529b158f3b4a8f49b896f5bbbee9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1250286906
@@ -5048,58 +4976,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 388106939, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: m_Name
-      value: FrontUpCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 388106941, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 242720502, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
+      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 219208361}
     - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
       propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 155458563}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 219208361}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SpawnNewBlock
-      objectReference: {fileID: 0}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: RoadController, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 388106942, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: OnBlockOver.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1169509051, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
       propertyPath: _input
       value: 
       objectReference: {fileID: 170674234}
-    - target: {fileID: 1854589036, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1978022411180239993, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: m_Name
-      value: PlayerRenderer
-      objectReference: {fileID: 0}
     - target: {fileID: 6949002775001521542, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5147,10 +5035,6 @@ PrefabInstance:
     - target: {fileID: 7720297414667208508, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7720297414667208508, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20645cca3b1d25847966e77948889a7b, type: 3}
