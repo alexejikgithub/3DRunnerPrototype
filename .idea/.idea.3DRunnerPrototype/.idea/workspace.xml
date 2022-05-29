@@ -20,21 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1de547-bc5b-425c-9420-4a36f3ecf74d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/CoinPoolController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/CoinPoolController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/PathPoolController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/PathPoolController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path/PathBlockComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path/PathBlockComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/IPoolObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/IPoolObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +62,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RoadPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/PathPoolController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathBlockComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +127,7 @@
       <workItem from="1653839319737" duration="1000" />
       <workItem from="1653839342044" duration="1388000" />
       <workItem from="1653845215076" duration="1790000" />
-      <workItem from="1653847040216" duration="1034000" />
+      <workItem from="1653847040216" duration="1418000" />
     </task>
     <servers />
   </component>

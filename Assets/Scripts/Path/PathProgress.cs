@@ -26,8 +26,15 @@ namespace Scripts.Path
 
         private void GetInitialValues()
         {
-            for (var i = 0; i < _path.PathSequance.Length - 1; i++)
-                _finishZ += _path.GetPoolByType(_path.PathSequance[i]).PrefabToPool.Length;
+            foreach (PathBlockType pathBlockType in _path.PathSequance)
+            {
+                if (pathBlockType == PathBlockType.Finish)
+                {
+                    continue;
+                }
+
+                _finishZ += _path.GetPoolByType(pathBlockType).PrefabToPool.Length;
+            }
             _finishZ += _path.transform.position.z;
             _initialDistance = _finishZ - _player.transform.position.z;
         }
