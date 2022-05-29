@@ -54,6 +54,7 @@ namespace Scripts.Input
         
         public void OnPointerUp(PointerEventData eventData)
         {
+            if (!_isGameplayInputOn) return;
             OnPointerUpEvent?.Invoke(eventData.pointerCurrentRaycast.worldPosition);
         }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Scripts.Input;
 using UnityEngine;
 
@@ -14,7 +15,6 @@ public class PlayerComponent : MonoBehaviour
 	[SerializeField] private InteractableCanvasObject _input;
 
 	private Rigidbody _rigidBody;
-
 
 
 	private bool _isRunning;
@@ -55,6 +55,10 @@ public class PlayerComponent : MonoBehaviour
 		}
 	}
 
+	public void TurnOffInput()
+	{
+		_input.GameplayInputOff();
+	}
 
 	private void BeginInput(Vector3 position)
 	{
@@ -92,9 +96,24 @@ public class PlayerComponent : MonoBehaviour
 		_animator.SetBool(IsRunning, _isRunning);
 	}
 
-	public void CollectCoin(int value)
+	public void CollectCoin(CoinComponent coin)
 	{
-		OnCollectCoin?.Invoke(value);
+		OnCollectCoin?.Invoke(coin.CoinValue);
+		StartCoroutine(coin.DestroyCoin());
+	}
+
+	public void CrossFinish()
+	{
+		OnFinishLineCrossed?.Invoke();
+	}
+
+	public IEnumerator FinishCoroutine()
+	{
+		StartRunning();
+		_isRunning = false;
+		_rigidBody.velocity = new Vector3(0, 0, _runSpeed);
+		yield return new WaitForSeconds(0.5f);
+		StopRunning();
 	}
 
 
@@ -105,24 +124,7 @@ public class PlayerComponent : MonoBehaviour
 		Gizmos.DrawRay(new Vector3(_rightBorder, 0.5f, -1), Vector3.forward * 10);
 	}
 
-	private void OnTriggerEnter(Collider other)
-	{
-		CoinComponent coin = other.gameObject.GetComponent<CoinComponent>();
-		if (coin != null)
-		{
 
-			CollectCoin(coin.CoinValue);
-			StartCoroutine(coin.DestroyCoin());
-			return;
-		}
-
-		FinishLineComponent finish = other.gameObject.GetComponent<FinishLineComponent>();
-		if (finish != null)
-		{
-			OnFinishLineCrossed?.Invoke();
-			return;
-		}
-	}
 
 	private void OnDestroy()
 	{
