@@ -851,7 +851,7 @@ MonoBehaviour:
   - _pool: {fileID: 1604875522}
     _type: 5
   _coinPool: {fileID: 174394058}
-  _pathSequance: 000000000500000002000000030000000400000001000000030000000200000004000000000000000100000005000000
+  _pathSequance: 000000000100000002000000030000000400000001000000030000000200000004000000000000000100000005000000
 --- !u!4 &155458564
 Transform:
   m_ObjectHideFlags: 0
@@ -5406,6 +5406,10 @@ PrefabInstance:
     - target: {fileID: 7879488526610445642, guid: b640f0cbdb2b38640901ea47bc25f91f, type: 3}
       propertyPath: m_Name
       value: PirateCoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879488526610445642, guid: b640f0cbdb2b38640901ea47bc25f91f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b640f0cbdb2b38640901ea47bc25f91f, type: 3}
