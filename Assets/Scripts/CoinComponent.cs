@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Scripts.Pool;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ namespace Scripts
     public class CoinComponent : MonoBehaviour, IPoolObject<CoinPoolController,CoinComponent>
     {
         [SerializeField] private int _coinValue;
-        [SerializeField] private ParticleSystem _particles;
+        [SerializeField] private List<ParticleSystem> _particles;
         [SerializeField] private Renderer _renderer;
 
         private bool _isCollected = false;
@@ -18,7 +19,7 @@ namespace Scripts
 
         private void Awake()
         {
-            _particles.gameObject.SetActive(false);
+            DeactivateParticles();
             gameObject.SetActive(true);
         }
 
@@ -27,7 +28,7 @@ namespace Scripts
         public void CollectCoin()
         {
             _isCollected = true;
-            _particles.gameObject.SetActive(true);
+            ActivateParticles();
             _renderer.enabled = false;
         }
 
@@ -40,13 +41,27 @@ namespace Scripts
         {
             StopAllCoroutines();
             gameObject.SetActive(true);
-            _particles.gameObject.SetActive(false);
+            DeactivateParticles();
             _renderer.enabled = true;
             _isCollected = false;
             if (_pool != null)
                 _pool.ReturnPooledGameObject(this);
             else
                 Destroy(gameObject);
+        }
+
+        private void ActivateParticles()
+        {
+            foreach (ParticleSystem particle in _particles)
+            {
+                particle.gameObject.SetActive(true);
+            }
+        }private void DeactivateParticles()
+        {
+            foreach (ParticleSystem particle in _particles)
+            {
+                particle.gameObject.SetActive(false);
+            }
         }
 
         private void OnTriggerEnter(Collider other)
