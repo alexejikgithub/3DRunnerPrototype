@@ -99,7 +99,7 @@ public class PlayerComponent : MonoBehaviour
 	public void CollectCoin(CoinComponent coin)
 	{
 		OnCollectCoin?.Invoke(coin.CoinValue);
-		StartCoroutine(coin.DestroyCoin());
+		coin.CollectCoin();
 	}
 
 	public void CrossFinish()

@@ -4875,9 +4875,9 @@ GameObject:
   - component: {fileID: 7355013424856821744}
   - component: {fileID: 5890033386623262805}
   - component: {fileID: 8527967634506781855}
-  - component: {fileID: 5058868602084978106}
   - component: {fileID: 5058868602084978054}
   - component: {fileID: 5058868602084978055}
+  - component: {fileID: 901096536736770758}
   m_Layer: 6
   m_Name: PirateCoin
   m_TagString: Untagged
@@ -4950,19 +4950,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5058868602084978106
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7879488526610445642}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.6399999, y: 0.44000012, z: 2.5998933}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5058868602084978054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4992,3 +4979,16 @@ MonoBehaviour:
   _particles: {fileID: 5058868600982444863}
   _particlesTime: 5
   _renderer: {fileID: 8527967634506781855}
+--- !u!135 &901096536736770758
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879488526610445642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.3199999
+  m_Center: {x: 0, y: 0, z: 0}

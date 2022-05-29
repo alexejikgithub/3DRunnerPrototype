@@ -13,16 +13,17 @@ public class CoinComponent : MonoBehaviour,IPoolObject
 	private void Awake()
 	{
 		_particles.gameObject.SetActive(false);
+		gameObject.SetActive(true);
+		
 	}
 
 	private ObjectPoolController _pool;
 
-	public IEnumerator DestroyCoin()
+	public void CollectCoin()
 	{
 		_particles.gameObject.SetActive(true);
 		_renderer.enabled = false;
-		yield return new WaitForSeconds(_particlesTime);
-		RemoveObject();
+	
 	}
 
 	public void SetPool(ObjectPoolController pool)
@@ -33,6 +34,8 @@ public class CoinComponent : MonoBehaviour,IPoolObject
 	public void RemoveObject()
 	{
 		StopAllCoroutines();
+		gameObject.SetActive(true);
+		_renderer.enabled = true;
 		if (_pool != null)
 			_pool.ReturnPooledGameObject(gameObject);
 		else
