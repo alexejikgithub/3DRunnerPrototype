@@ -98,6 +98,7 @@ public class PlayerComponent : MonoBehaviour
 
 	public void CollectCoin(CoinComponent coin)
 	{
+		if (coin.IsCollected) return;
 		OnCollectCoin?.Invoke(coin.CoinValue);
 		coin.CollectCoin();
 	}
