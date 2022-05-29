@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1de547-bc5b-425c-9420-4a36f3ecf74d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/GameplayInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FD88A7F7-44C8-413F-A794-C8FC6E0439F6/4d/9ad7d798/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -57,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/IPoolObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/CoinPoolController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RoadPool.cs" />
@@ -65,6 +67,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathBlockComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" />
       </list>
     </option>
   </component>
@@ -127,7 +130,8 @@
       <workItem from="1653839319737" duration="1000" />
       <workItem from="1653839342044" duration="1388000" />
       <workItem from="1653845215076" duration="1790000" />
-      <workItem from="1653847040216" duration="1418000" />
+      <workItem from="1653847040216" duration="1973000" />
+      <workItem from="1653849110828" duration="301000" />
     </task>
     <servers />
   </component>
