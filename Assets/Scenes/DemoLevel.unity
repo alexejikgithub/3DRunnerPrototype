@@ -177,7 +177,7 @@ MonoBehaviour:
   - {fileID: 1453462}
   - {fileID: 193427834}
   - {fileID: 1907830436}
-  _objectToPool: {fileID: 8725578432046000896, guid: 69f82f99a5a50554d93b424a5fad9cee, type: 3}
+  _prefabToPool: {fileID: 8725578432046000896, guid: 69f82f99a5a50554d93b424a5fad9cee, type: 3}
 --- !u!4 &64351621
 Transform:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   - {fileID: 2119576748}
   - {fileID: 1104917792}
   - {fileID: 325410450}
-  _objectToPool: {fileID: 6769628055711044220, guid: e465fcdedd8e36b448a99d9f60b6ea7f, type: 3}
+  _prefabToPool: {fileID: 6769628055711044220, guid: e465fcdedd8e36b448a99d9f60b6ea7f, type: 3}
 --- !u!4 &81823987
 Transform:
   m_ObjectHideFlags: 0
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   - {fileID: 2130891574}
   - {fileID: 1103149725}
   - {fileID: 809129121}
-  _objectToPool: {fileID: 7879488526610445642, guid: b640f0cbdb2b38640901ea47bc25f91f, type: 3}
+  _prefabToPool: {fileID: 7879488526610445642, guid: b640f0cbdb2b38640901ea47bc25f91f, type: 3}
 --- !u!1 &193427834 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8725578432046000896, guid: 69f82f99a5a50554d93b424a5fad9cee, type: 3}
@@ -2573,7 +2573,7 @@ MonoBehaviour:
   - {fileID: 1118213572}
   - {fileID: 835172937}
   - {fileID: 1478350653}
-  _objectToPool: {fileID: 2419383287316164651, guid: 6aadfd5c14f712d47b372a288acd767d, type: 3}
+  _prefabToPool: {fileID: 2419383287316164651, guid: 6aadfd5c14f712d47b372a288acd767d, type: 3}
 --- !u!4 &780284586
 Transform:
   m_ObjectHideFlags: 0
@@ -2952,7 +2952,7 @@ MonoBehaviour:
   - {fileID: 637511981}
   - {fileID: 779154826}
   - {fileID: 832474245}
-  _objectToPool: {fileID: 8748856569329720807, guid: bbca9ddc65adf6a488126bb7c7f97b4c, type: 3}
+  _prefabToPool: {fileID: 8748856569329720807, guid: bbca9ddc65adf6a488126bb7c7f97b4c, type: 3}
 --- !u!1 &923431839 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7879488526610445642, guid: b640f0cbdb2b38640901ea47bc25f91f, type: 3}
@@ -3601,7 +3601,7 @@ MonoBehaviour:
   - {fileID: 2041838696}
   - {fileID: 277783482}
   - {fileID: 123509275}
-  _objectToPool: {fileID: 8083367471411275312, guid: f4064135853c8b54ab767370b8bea940, type: 3}
+  _prefabToPool: {fileID: 8083367471411275312, guid: f4064135853c8b54ab767370b8bea940, type: 3}
 --- !u!4 &1158683772
 Transform:
   m_ObjectHideFlags: 0
@@ -3668,7 +3668,7 @@ MonoBehaviour:
   _poolObjects:
   - {fileID: 399824636}
   - {fileID: 292870116}
-  _objectToPool: {fileID: 4240016124372424320, guid: 318ad51a1a5d7bf41be0a33ff1b37050, type: 3}
+  _prefabToPool: {fileID: 4240016124372424320, guid: 318ad51a1a5d7bf41be0a33ff1b37050, type: 3}
 --- !u!114 &1181324467 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 33268741842684265, guid: f4064135853c8b54ab767370b8bea940, type: 3}
@@ -4754,7 +4754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _poolObjects:
   - {fileID: 2080122053}
-  _objectToPool: {fileID: 3429560105395516912, guid: 002d99aafaee7c74d820017bdc11e85e, type: 3}
+  _prefabToPool: {fileID: 0}
 --- !u!1 &1657553453
 GameObject:
   m_ObjectHideFlags: 0

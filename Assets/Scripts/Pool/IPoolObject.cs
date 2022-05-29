@@ -1,5 +1,10 @@
-public interface IPoolObject
+using UnityEngine;
+
+namespace Scripts.Pool
 {
-    public void SetPool(ObjectPoolController pool);
-    public void RemoveObject();
+    public interface IPoolObject<TPool, TComponent> where TPool : ObjectPoolController<TComponent> where TComponent : MonoBehaviour
+    {
+        public void SetPool(TPool pool);
+        public void RemoveObject();
+    }
 }

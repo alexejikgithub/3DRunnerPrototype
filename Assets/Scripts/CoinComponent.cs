@@ -1,8 +1,9 @@
+using Scripts.Pool;
 using UnityEngine;
 
 namespace Scripts
 {
-    public class CoinComponent : MonoBehaviour, IPoolObject
+    public class CoinComponent : MonoBehaviour, IPoolObject<CoinPoolController,CoinComponent>
     {
         [SerializeField] private int _coinValue;
         [SerializeField] private ParticleSystem _particles;
@@ -22,7 +23,7 @@ namespace Scripts
             gameObject.SetActive(true);
         }
 
-        private ObjectPoolController _pool;
+        private CoinPoolController _pool;
 
         public void CollectCoin()
         {
@@ -31,7 +32,7 @@ namespace Scripts
             _renderer.enabled = false;
         }
 
-        public void SetPool(ObjectPoolController pool)
+        public void SetPool(CoinPoolController pool)
         {
             _pool = pool;
         }
@@ -44,7 +45,7 @@ namespace Scripts
             _renderer.enabled = true;
             _isCollected = false;
             if (_pool != null)
-                _pool.ReturnPooledGameObject(gameObject);
+                _pool.ReturnPooledGameObject(this);
             else
                 Destroy(gameObject);
         }

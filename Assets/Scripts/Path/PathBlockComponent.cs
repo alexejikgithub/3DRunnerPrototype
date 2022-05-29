@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Scripts.Pool;
 using UnityEngine;
 
 namespace Scripts.Path
@@ -13,7 +14,7 @@ namespace Scripts.Path
         Finish
     }
 
-    public class PathBlockComponent : MonoBehaviour, IPoolObject
+    public class PathBlockComponent : MonoBehaviour, IPoolObject<PathPoolController,PathBlockComponent>
     {
         [SerializeField] private float _length;
         [SerializeField] private PathBlockType _type;
@@ -22,20 +23,20 @@ namespace Scripts.Path
         public PathBlockType Type => _type;
 
 
-        private ObjectPoolController _pathPool;
+        private PathPoolController _pathPool;
 
 
-        public void SetPool(ObjectPoolController pool)
+        public void SetPool(PathPoolController pool)
         {
             _pathPool = pool;
         }
 
-        public void SetCoins(ObjectPoolController pool)
+        public void SetCoins(CoinPoolController pool)
         {
             CoinComponent coin;
             foreach (var position in _positions)
             {
-                coin = pool.GetPooledGameObject().GetComponent<CoinComponent>();
+                coin = pool.GetPooledGameObject();
                 coin.SetPool(pool);
                 coin.transform.position = position.transform.position;
                 coin.gameObject.SetActive(true);
@@ -46,7 +47,7 @@ namespace Scripts.Path
         {
             StopAllCoroutines();
             if (_pathPool != null)
-                _pathPool.ReturnPooledGameObject(gameObject);
+                _pathPool.ReturnPooledGameObject(this);
             else
                 Destroy(gameObject);
         }

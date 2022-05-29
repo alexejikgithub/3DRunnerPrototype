@@ -38,8 +38,10 @@
           <e p="PlayerCollider.cs" t="Include" />
           <e p="PlayerComponent.cs" t="Include" />
           <e p="Pool" t="Include">
+            <e p="CoinPoolController.cs" t="Include" />
             <e p="IPoolObject.cs" t="Include" />
             <e p="ObjectPoolController.cs" t="Include" />
+            <e p="PathPoolController.cs" t="Include" />
           </e>
           <e p="RoadPool.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Scripts.Pool;
 using UnityEngine;
 
 namespace Scripts.Path
@@ -7,12 +8,12 @@ namespace Scripts.Path
     {
         [SerializeField] private PathBlockComponent _frontBlock;
         [SerializeField] private List<PathTypePool> _pools;
-        [SerializeField] private ObjectPoolController _coinPool;
+        [SerializeField] private CoinPoolController _coinPool;
         [SerializeField] private PathBlockType[] _pathSequance;
 
 
         private PathBlockComponent _currentBlock;
-        private ObjectPoolController _currentPool;
+        private PathPoolController _currentPool;
 
         private int _blockIndex;
 
@@ -43,7 +44,7 @@ namespace Scripts.Path
             if (_blockIndex >= PathSequance.Length) return;
 
             _currentPool = GetPoolByType(PathSequance[_blockIndex]);
-            _currentBlock = _currentPool.GetPooledGameObject().GetComponent<PathBlockComponent>();
+            _currentBlock = _currentPool.GetPooledGameObject();
             _currentBlock.transform.position = _frontBlock.transform.position + new Vector3(0, 0, _currentBlock.Length);
             _currentBlock.gameObject.SetActive(true);
             _currentBlock.SetPool(_currentPool);
@@ -52,7 +53,7 @@ namespace Scripts.Path
             _blockIndex++;
         }
 
-        public ObjectPoolController GetPoolByType(PathBlockType type)
+        public PathPoolController GetPoolByType(PathBlockType type)
         {
             foreach (var pool in _pools)
                 if (pool.Type == type)

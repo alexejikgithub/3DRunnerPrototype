@@ -1,5 +1,6 @@
 using System;
 using Scripts.Path;
+using Scripts.Pool;
 using UnityEngine;
 
 namespace Scripts
@@ -7,11 +8,11 @@ namespace Scripts
     [Serializable]
     public class PathTypePool
     {
-        [SerializeField] private ObjectPoolController _pool;
+        [SerializeField] private PathPoolController _pool;
         [SerializeField] private PathBlockType _type;
 
 
-        public ObjectPoolController Pool => _pool;
+        public PathPoolController Pool => _pool;
         public PathBlockType Type => _type;
     }
 }
