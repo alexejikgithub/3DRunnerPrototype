@@ -7,7 +7,6 @@ namespace Scripts
     {
         [SerializeField] private int _coinValue;
         [SerializeField] private ParticleSystem _particles;
-        [SerializeField] private float _particlesTime;
         [SerializeField] private Renderer _renderer;
 
         private bool _isCollected = false;

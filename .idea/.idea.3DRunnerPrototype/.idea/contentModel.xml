@@ -21,7 +21,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraFollowComponent.cs" t="Include" />
           <e p="CoinComponent.cs" t="Include" />
           <e p="FinishLineComponent.cs" t="Include" />
           <e p="FrontCollider.cs" t="Include" />

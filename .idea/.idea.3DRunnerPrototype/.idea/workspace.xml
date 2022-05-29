@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1de547-bc5b-425c-9420-4a36f3ecf74d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollowComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollowComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishLineComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishLineComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCollider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,20 +61,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DisableOnDistanceUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FrontCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/IPoolObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/CoinPoolController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RoadPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/PathPoolController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathBlockComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool/ObjectPoolController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FinishLineComponent.cs" />
       </list>
     </option>
   </component>
@@ -131,7 +139,7 @@
       <workItem from="1653839342044" duration="1388000" />
       <workItem from="1653845215076" duration="1790000" />
       <workItem from="1653847040216" duration="1973000" />
-      <workItem from="1653849110828" duration="301000" />
+      <workItem from="1653849110828" duration="1078000" />
     </task>
     <servers />
   </component>
@@ -164,10 +172,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="596" y="114" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1653768645862" />
-    <state x="449" y="145" width="637" height="534" key="find.popup" timestamp="1653847767076">
+    <state x="449" y="145" width="637" height="534" key="find.popup" timestamp="1653850031059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="145" width="637" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1653847767076" />
+    <state x="449" y="145" width="637" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1653850031059" />
     <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1653590105896">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

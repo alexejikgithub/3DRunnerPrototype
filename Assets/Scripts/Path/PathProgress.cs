@@ -26,7 +26,7 @@ namespace Scripts.Path
 
         private void GetInitialValues()
         {
-            foreach (PathBlockType pathBlockType in _path.PathSequance)
+            foreach (PathBlockType pathBlockType in _path.PathSequence)
             {
                 if (pathBlockType == PathBlockType.Finish)
                 {

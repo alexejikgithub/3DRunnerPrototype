@@ -22,7 +22,6 @@ namespace Scripts
             if (finish != null)
             {
                 OnCrossFinish?.Invoke();
-                return;
             }
         }
     }

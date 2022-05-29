@@ -8,13 +8,13 @@ namespace Scripts.Pool
     public class ObjectPoolController<T> : MonoBehaviour where T : MonoBehaviour
     {
        
-        [SerializeField] private T prefabToPool;
+        [SerializeField] private T _prefabToPool;
 
         [SerializeField] private List<T> _poolObjects;
 
         private T _currentElement;
 
-        public T PrefabToPool => prefabToPool;
+        public T PrefabToPool => _prefabToPool;
 
 
         private void Awake()

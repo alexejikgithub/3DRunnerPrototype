@@ -1,6 +1,8 @@
-using System;
 using UnityEngine;
 
-public class FinishLineComponent : MonoBehaviour
+namespace Scripts
 {
+    public class FinishLineComponent : MonoBehaviour
+    {
+    }
 }

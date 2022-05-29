@@ -9,7 +9,7 @@ namespace Scripts.Path
         [SerializeField] private PathBlockComponent _frontBlock;
         [SerializeField] private List<PathTypePool> _pools;
         [SerializeField] private CoinPoolController _coinPool;
-        [SerializeField] private PathBlockType[] _pathSequance;
+        [SerializeField] private PathBlockType[] _pathSequence;
 
 
         private PathBlockComponent _currentBlock;
@@ -17,7 +17,7 @@ namespace Scripts.Path
 
         private int _blockIndex;
 
-        public PathBlockType[] PathSequance => _pathSequance;
+        public PathBlockType[] PathSequence => _pathSequence;
         public List<PathTypePool> Pools => _pools;
 
         private void Awake()
@@ -31,7 +31,7 @@ namespace Scripts.Path
 
             while (cameraFarClipping > length)
             {
-                if (_blockIndex >= PathSequance.Length) break;
+                if (_blockIndex >= PathSequence.Length) break;
 
                 SpawnNewBlock();
                 length += _currentBlock.Length;
@@ -41,9 +41,9 @@ namespace Scripts.Path
 
         public void SpawnNewBlock()
         {
-            if (_blockIndex >= PathSequance.Length) return;
+            if (_blockIndex >= PathSequence.Length) return;
 
-            _currentPool = GetPoolByType(PathSequance[_blockIndex]);
+            _currentPool = GetPoolByType(PathSequence[_blockIndex]);
             _currentBlock = _currentPool.GetPooledGameObject();
             _currentBlock.transform.position = _frontBlock.transform.position + new Vector3(0, 0, _currentBlock.Length);
             _currentBlock.gameObject.SetActive(true);
@@ -58,7 +58,7 @@ namespace Scripts.Path
             foreach (var pool in _pools)
                 if (pool.Type == type)
                     return pool.Pool;
-            return null;
+            return _pools[0].Pool;
         }
     }
 }
