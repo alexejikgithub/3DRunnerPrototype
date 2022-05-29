@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8083367471411275317}
   - component: {fileID: 8083367471411275315}
   - component: {fileID: 4094297714575037104}
-  - component: {fileID: 1181324467}
+  - component: {fileID: 33268741842684265}
   m_Layer: 0
   m_Name: Water Plane
   m_TagString: Untagged
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.5, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1181324467
+--- !u!114 &33268741842684265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8083367471411275312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78b3fe18d59953e4991f21db15ae7893, type: 3}
+  m_Script: {fileID: 11500000, guid: e529b158f3b4a8f49b896f5bbbee9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _length: 20

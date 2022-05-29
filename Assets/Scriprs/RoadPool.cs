@@ -2,12 +2,12 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class RoadTypePool
+public class PathTypePool
 {
 	[SerializeField] private ObjectPoolController _pool;
-	[SerializeField] private RoadBlockType _type;
+	[SerializeField] private PathBlockType _type;
 
 
 	public ObjectPoolController Pool => _pool;
-	public RoadBlockType Type => _type;
+	public PathBlockType Type => _type;
 }

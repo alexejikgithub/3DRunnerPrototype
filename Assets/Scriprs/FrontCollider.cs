@@ -7,10 +7,10 @@ public class FrontCollider : MonoBehaviour
 {
 	[SerializeField] private UnityEvent OnBlockOver;
 
-	private RoadBlockComponent _block;
+	private PathBlockComponent _block;
 	private void OnTriggerExit(Collider other)
 	{
-		_block = other.GetComponent<RoadBlockComponent>();
+		_block = other.GetComponent<PathBlockComponent>();
 		if (_block!=null)
 		{
 			OnBlockOver?.Invoke();

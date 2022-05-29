@@ -25,7 +25,7 @@ public class CoinComponent : MonoBehaviour,IPoolObject
 		RemoveObject();
 	}
 
-	public void SetRoadPool(ObjectPoolController pool)
+	public void SetPool(ObjectPoolController pool)
 	{
 		_pool = pool;
 	}

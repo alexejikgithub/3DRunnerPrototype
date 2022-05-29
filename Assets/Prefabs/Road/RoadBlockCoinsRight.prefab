@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2419383287316164650}
   - component: {fileID: 1964959748936495750}
-  - component: {fileID: 260050059905124111}
+  - component: {fileID: 52177450391214869}
   m_Layer: 0
   m_Name: RoadBlockCoinsRight
   m_TagString: Untagged
@@ -129,7 +129,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.5, y: 0.7, z: 9}
   m_Center: {x: 0, y: 2.58, z: 4.5}
---- !u!114 &260050059905124111
+--- !u!114 &52177450391214869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,11 +138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2419383287316164651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78b3fe18d59953e4991f21db15ae7893, type: 3}
+  m_Script: {fileID: 11500000, guid: e529b158f3b4a8f49b896f5bbbee9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _length: 9
-  _type: 1
+  _type: 2
   _coinPool: {fileID: 0}
   _positions:
   - {fileID: 2396881091437642888}

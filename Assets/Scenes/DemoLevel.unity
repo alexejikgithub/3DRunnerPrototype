@@ -749,7 +749,7 @@ MonoBehaviour:
   - _pool: {fileID: 1604875522}
     _type: 5
   _coinPool: {fileID: 174394058}
-  _roadSequance: 000000000100000002000000030000000400000001000000000000000300000001000000020000000100000005000000
+  _pathSequance: 000000000100000002000000030000000400000001000000030000000200000004000000000000000100000005000000
 --- !u!4 &155458564
 Transform:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ Transform:
   - {fileID: 64351621}
   - {fileID: 1604875521}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162076587 stripped
 GameObject:
@@ -913,7 +913,7 @@ Transform:
   - {fileID: 820735319}
   - {fileID: 950306682}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &174394058
 MonoBehaviour:
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   - _pool: {fileID: 1158683771}
     _type: 0
   _coinPool: {fileID: 0}
-  _roadSequance: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  _pathSequance: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!1001 &237130315
 PrefabInstance:
   m_ObjectHideFlags: 0

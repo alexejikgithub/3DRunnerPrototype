@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum RoadBlockType
+public enum PathBlockType
 {
 	
 	Empty,
@@ -12,34 +12,32 @@ public enum RoadBlockType
 	CoinsEverywhere,
 	Finish
 }
-public class RoadBlockComponent : MonoBehaviour, IPoolObject
+public class PathBlockComponent : MonoBehaviour, IPoolObject
 {
 	[SerializeField] private float _length;
-	[SerializeField] private RoadBlockType _type;
-	[SerializeField] private ObjectPoolController _coinPool;
+	[SerializeField] private PathBlockType _type;
 	[SerializeField] private List<SpawnPosition> _positions;
 	public float Length => _length;
-	public RoadBlockType Type => _type;
+	public PathBlockType Type => _type;
 
 
-	private ObjectPoolController _roadPool;
+	private ObjectPoolController _pathPool;
 	
 
 
 
-	public void SetRoadPool(ObjectPoolController pool)
+	public void SetPool(ObjectPoolController pool)
 	{
-		_roadPool = pool;
+		_pathPool = pool;
 	}
 
 	public void SetCoins(ObjectPoolController pool)
 	{
-		_coinPool = pool;
 		CoinComponent coin;
 		foreach (SpawnPosition position in _positions)
 		{
-			coin = _coinPool.GetPooledGameObject().GetComponent<CoinComponent>();
-			coin.SetRoadPool(_coinPool);
+			coin = pool.GetPooledGameObject().GetComponent<CoinComponent>();
+			coin.SetPool(pool);
 			coin.transform.position = position.transform.position;
 			coin.gameObject.SetActive(true);
 		}
@@ -48,8 +46,8 @@ public class RoadBlockComponent : MonoBehaviour, IPoolObject
 	public void RemoveObject()
 	{
 		StopAllCoroutines();
-		if (_roadPool != null)
-			_roadPool.ReturnPooledGameObject(gameObject);
+		if (_pathPool != null)
+			_pathPool.ReturnPooledGameObject(gameObject);
 		else
 			Destroy(gameObject);
 	}
