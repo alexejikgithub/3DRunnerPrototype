@@ -9,6 +9,7 @@ public enum RoadBlockType
 	WithCoinsCenter,
 	WithCoinsRight,
 	WithCoinsLeft,
+	CoinsEverywhere,
 	Finish
 }
 public class RoadBlockComponent : MonoBehaviour, IPoolObject
@@ -53,7 +54,7 @@ public class RoadBlockComponent : MonoBehaviour, IPoolObject
 			Destroy(gameObject);
 	}
 
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerExit(Collider other)
 	{
 		if (other.tag == "BackCollider")
 		{
