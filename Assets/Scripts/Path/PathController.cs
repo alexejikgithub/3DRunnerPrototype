@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Scripts.Pool;
 using UnityEngine;
@@ -24,7 +25,10 @@ namespace Scripts.Path
         {
             _frontBlock.SetPool(GetPoolByType(_frontBlock.Type));
             _frontBlock.SetCoins(_coinPool);
-            
+        }
+
+        private void Start()
+        {
             if (Camera.main is null) return;
             var cameraFarClipping = Camera.main.farClipPlane;
             var length = 0f;
@@ -37,7 +41,6 @@ namespace Scripts.Path
                 length += _currentBlock.Length;
             }
         }
-
 
         public void SpawnNewBlock()
         {

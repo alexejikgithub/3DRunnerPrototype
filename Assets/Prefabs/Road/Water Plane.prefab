@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9204660382426039393}
   - component: {fileID: 243710502070905086}
   - component: {fileID: 2051169266305140471}
-  - component: {fileID: 690811650480470109}
   m_Layer: 0
   m_Name: Water Plane (1)
   m_TagString: Untagged
@@ -97,21 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.5, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &690811650480470109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5699269588546774522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e529b158f3b4a8f49b896f5bbbee9bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _length: 20
-  _type: 0
-  _positions: []
 --- !u!1 &8083367471411275312
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +222,6 @@ GameObject:
   - component: {fileID: 8957105852782239588}
   - component: {fileID: 70369007401275343}
   - component: {fileID: 4997027722521880204}
-  - component: {fileID: 3249675812793479028}
   m_Layer: 0
   m_Name: Water Plane
   m_TagString: Untagged
@@ -323,18 +306,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.5, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3249675812793479028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8348264541764980869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e529b158f3b4a8f49b896f5bbbee9bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _length: 20
-  _type: 0
-  _positions: []
