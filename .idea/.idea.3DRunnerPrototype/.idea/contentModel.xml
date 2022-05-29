@@ -20,26 +20,31 @@
             <e p="read me.txt" t="Include" />
           </e>
         </e>
-        <e p="Scriprs" t="Include">
+        <e p="Scripts" t="Include">
           <e p="CameraFollowComponent.cs" t="Include" />
           <e p="CoinComponent.cs" t="Include" />
-          <e p="DisableOnDistanceUtil.cs" t="Include" />
           <e p="FinishLineComponent.cs" t="Include" />
+          <e p="FrontCollider.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="GameplayInput.cs" t="Include" />
             <e p="InteractableCanvasObject.cs" t="Include" />
           </e>
           <e p="LevelManager.cs" t="Include" />
+          <e p="Path" t="Include">
+            <e p="PathBlockComponent.cs" t="Include" />
+            <e p="PathController.cs" t="Include" />
+            <e p="PathProgress.cs" t="Include" />
+          </e>
+          <e p="PlayerCollider.cs" t="Include" />
           <e p="PlayerComponent.cs" t="Include" />
           <e p="Pool" t="Include">
             <e p="IPoolObject.cs" t="Include" />
             <e p="ObjectPoolController.cs" t="Include" />
           </e>
-          <e p="RoadBlockComponent.cs" t="Include" />
-          <e p="RoadController.cs" t="Include" />
           <e p="RoadPool.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
           <e p="ScoreCounter.cs" t="Include" />
+          <e p="SpawnPosition.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

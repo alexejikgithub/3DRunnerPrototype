@@ -10,18 +10,23 @@ namespace Scripts.Input
         IPointerDownHandler, IPointerUpHandler
     {
         public delegate void OnBeginDragDelegate(Vector3 position);
+
         public event OnBeginDragDelegate OnBeginDragEvent;
 
         public delegate void OnMouseDragDelegate(Vector3 position);
+
         public event OnMouseDragDelegate OnMouseDragEvent;
 
         public delegate void OnEndDragDelegate(Vector3 position);
+
         public event OnEndDragDelegate OnEndDragEvent;
 
         public delegate void OnPointerDownDelegate(Vector3 position);
+
         public event OnPointerDownDelegate OnPointerDownEvent;
-        
+
         public delegate void OnPointerUpDelegate(Vector3 position);
+
         public event OnPointerUpDelegate OnPointerUpEvent;
 
         private bool _isGameplayInputOn = true;
@@ -51,7 +56,7 @@ namespace Scripts.Input
             if (!_isGameplayInputOn) return;
             OnPointerDownEvent?.Invoke(eventData.pointerCurrentRaycast.worldPosition);
         }
-        
+
         public void OnPointerUp(PointerEventData eventData)
         {
             if (!_isGameplayInputOn) return;
@@ -67,7 +72,5 @@ namespace Scripts.Input
         {
             _isGameplayInputOn = false;
         }
-
-        
     }
 }

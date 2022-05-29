@@ -21,12 +21,49 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1de547-bc5b-425c-9420-4a36f3ecf74d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunnerPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/PlayerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriprs/PlayerComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ExternalAssets/SimpleTown/Prefabs/Environment/Env_Road_Ramp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ExternalAssets/SimpleTown/Prefabs/Environment/Env_Road_Ramp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_ExternalAssets/SimpleTown/Prefabs/Props/Prop_Roadsign_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_ExternalAssets/SimpleTown/Prefabs/Props/Prop_Roadsign_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/CameraFollowComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/CameraFollowComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/CoinComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/CoinComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/DisableOnDistanceUtil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/DisableOnDistanceUtil.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/FinishLineComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/FinishLineComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/FrontCollider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/FrontCollider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Input.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Input/GameplayInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Input/GameplayInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Input/InteractableCanvasObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Input/InteractableCanvasObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/LevelManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/LevelManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path/PathBlockComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path/PathBlockComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path/PathController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path/PathController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path/PathProgress.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Path/PathProgress.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/PlayerCollider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/PlayerCollider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/PlayerComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/PlayerComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Pool.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Pool/IPoolObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Pool/IPoolObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Pool/ObjectPoolController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Pool/ObjectPoolController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/RoadPool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/RoadPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Rotator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/Rotator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/ScoreCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/ScoreCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/SpawnPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriprs/SpawnPosition.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +74,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/GameplayInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scriprs/Pool/ObjectPoolController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scriprs/RoadPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scriprs/CameraFollowComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -54,6 +89,21 @@
         <option value="$PROJECT_DIR$/Assets/Scriprs/RoadBlockComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scriprs/RoadController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scriprs/RoadPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/GameplayInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathBlockComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Path/PathProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollowComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CoinComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DisableOnDistanceUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FrontCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RoadPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPosition.cs" />
       </list>
     </option>
   </component>
@@ -113,6 +163,8 @@
       <workItem from="1653765637843" duration="1812000" />
       <workItem from="1653767704658" duration="1864000" />
       <workItem from="1653769693008" duration="752000" />
+      <workItem from="1653839319737" duration="1000" />
+      <workItem from="1653839342044" duration="663000" />
     </task>
     <servers />
   </component>
@@ -137,6 +189,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="516" y="257" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1653839456537">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="257" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1536.824@0.0.1536.824" timestamp="1653839456537" />
     <state x="596" y="114" key="RiderGenerateDialog" timestamp="1653768645862">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

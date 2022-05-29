@@ -10,9 +10,9 @@ public class ObjectPoolController : MonoBehaviour
 
     private GameObject _currentElement;
 
-	public GameObject ObjectToPool => _objectToPool;
+    public GameObject ObjectToPool => _objectToPool;
 
-	public GameObject GetPooledGameObject()
+    public GameObject GetPooledGameObject()
     {
         if (_poolObjects.Count > 0)
         {
