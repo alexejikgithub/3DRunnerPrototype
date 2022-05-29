@@ -1360,7 +1360,7 @@ MonoBehaviour:
   - _pool: {fileID: 1158683771}
     _type: 0
   _coinPool: {fileID: 0}
-  _pathSequence: 
+  _pathSequence: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!1001 &237130315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3082,11 +3082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd0243d831e6734ca3d4b4856caec0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 543450652214327892}
-  _offset: {x: 0, y: 0, z: -10}
-  _movementSpeed: 5
-  _desiredZPosition: {x: 0, y: 0, z: 0}
-  _desiredXPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
