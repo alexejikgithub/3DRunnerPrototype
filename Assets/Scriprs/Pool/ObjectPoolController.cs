@@ -10,8 +10,9 @@ public class ObjectPoolController : MonoBehaviour
 
     private GameObject _currentElement;
 
+	public GameObject ObjectToPool => _objectToPool;
 
-    public GameObject GetPooledGameObject()
+	public GameObject GetPooledGameObject()
     {
         if (_poolObjects.Count > 0)
         {
@@ -22,7 +23,7 @@ public class ObjectPoolController : MonoBehaviour
         }
         else
         {
-            _currentElement = Instantiate(_objectToPool, transform);
+            _currentElement = Instantiate(ObjectToPool, transform);
             return _currentElement;
         }
     }

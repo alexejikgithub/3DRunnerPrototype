@@ -37,13 +37,12 @@ public class PathBlockComponent : MonoBehaviour, IPoolObject
 		CoinComponent coin;
 		foreach (SpawnPosition position in _positions)
 		{
-			Debug.Log(gameObject.name);
+			
 			coin = pool.GetPooledGameObject().GetComponent<CoinComponent>();
 			coin.SetPool(pool);
 			coin.transform.position = position.transform.position;
 			coin.gameObject.SetActive(true);
-			Debug.Log(coin.name);
-			Debug.Log(gameObject.activeSelf);
+			
 		}
 	}
 

@@ -11,10 +11,16 @@ public class PathController : MonoBehaviour
 	[SerializeField] private PathBlockType[] _pathSequance;
 
 
+
+
 	private PathBlockComponent _currentBlock;
 	private ObjectPoolController _currentPool;
 
 	private int _blockIndex;
+
+	public PathBlockType[] PathSequance => _pathSequance;
+	public List<PathTypePool> Pools => _pools;
+
 	private void Awake()
 	{
 		_frontBlock.SetPool(GetPoolByType(_frontBlock.Type));
@@ -24,7 +30,7 @@ public class PathController : MonoBehaviour
 
 		while (cameraFarClipping > length)
 		{
-			if (_blockIndex >= _pathSequance.Length) break;
+			if (_blockIndex >= PathSequance.Length) break;
 
 			SpawnNewBlock();
 			length += _currentBlock.Length;
@@ -36,9 +42,9 @@ public class PathController : MonoBehaviour
 
 	public void SpawnNewBlock()
 	{
-		if (_blockIndex >= _pathSequance.Length) return;
+		if (_blockIndex >= PathSequance.Length) return;
 
-		_currentPool = GetPoolByType(_pathSequance[_blockIndex]);
+		_currentPool = GetPoolByType(PathSequance[_blockIndex]);
 		_currentBlock = _currentPool.GetPooledGameObject().GetComponent<PathBlockComponent>();
 		_currentBlock.transform.position = _frontBlock.transform.position + new Vector3(0, 0, _currentBlock.Length);
 		_currentBlock.gameObject.SetActive(true);
@@ -50,7 +56,7 @@ public class PathController : MonoBehaviour
 
 	}
 
-	private ObjectPoolController GetPoolByType(PathBlockType type)
+	public ObjectPoolController GetPoolByType(PathBlockType type)
 	{
 		foreach (PathTypePool pool in _pools)
 		{

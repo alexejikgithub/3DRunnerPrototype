@@ -35,6 +35,7 @@ public class CoinComponent : MonoBehaviour,IPoolObject
 	{
 		StopAllCoroutines();
 		gameObject.SetActive(true);
+		_particles.gameObject.SetActive(false);
 		_renderer.enabled = true;
 		if (_pool != null)
 			_pool.ReturnPooledGameObject(gameObject);
