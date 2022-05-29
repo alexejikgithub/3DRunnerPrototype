@@ -19,7 +19,6 @@ namespace Scripts.Path
         private int _blockIndex;
 
         public PathBlockType[] PathSequence => _pathSequence;
-        public List<PathTypePool> Pools => _pools;
 
         private void Awake()
         {

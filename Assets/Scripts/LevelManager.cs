@@ -9,7 +9,7 @@ namespace Scripts
         [SerializeField] private ScoreCounter _scoreCounter;
         [SerializeField] private Canvas _uiCanvas;
 
-        private bool _isLevelComplete = false;
+        private bool _isLevelComplete;
 
         private void Awake()
         {

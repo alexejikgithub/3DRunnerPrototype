@@ -10,7 +10,7 @@ namespace Scripts
         [SerializeField] private List<ParticleSystem> _particles;
         [SerializeField] private Renderer _renderer;
 
-        private bool _isCollected = false;
+        private bool _isCollected;
 
         public int CoinValue => _coinValue;
 
